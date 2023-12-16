@@ -7,9 +7,9 @@ if [ ! -d "$DIR" ]; then
 fi
 
 curl -L https://files.native.computer/glob/globzod.tar.xz | tar -xJ
-./zod/.run -d
+./zod/.run -d --http-port 8099
 
-URL="http://localhost:8080/globber"
+URL="http://localhost:8099/globber"
 DIR_NAME=$(basename "$DIR")
 CMD="curl -X POST $URL"
 

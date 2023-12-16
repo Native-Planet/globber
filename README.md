@@ -12,10 +12,11 @@
 - Downloads Native Planet's globzod.
 - Globs your directory.
 - Puts the `.glob` in your current working directory.
+- Deletes globzod.
 
 ## Src
 - Put `src/app/globber.hoon` in `landscape/app/globber.hoon`
 - Put `src/lib/globber.hoon` in `landscape/lib/globber.hoon`
 - `|rein %landscape [& %globber]`
-- Modify `URL` and `DIR` in `glob.sh`
+- Modify `URL` in `glob.sh`
 - `./glob.sh`

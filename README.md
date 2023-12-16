@@ -1,4 +1,7 @@
 # Globber
+
+![globber](https://github.com/Native-Planet/globber/assets/97745768/83e250d0-1e5f-4550-b037-a2a065f0fa71)
+
 - Custom globber for Native Planet.
 - Heavily inspired by %docket and the make-glob thread.
 - For standard usage, use the bash script provided.

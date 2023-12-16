@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 DIR="$1"
 if [ ! -d "$DIR" ]; then
@@ -6,7 +6,8 @@ if [ ! -d "$DIR" ]; then
     exit 1
 fi
 
-curl -L https://files.native.computer/glob/globzod.tar.xz | tar -xJ
+curl -L -O globzod.tar.xz https://files.native.computer/glob/globzod.tar.xz
+tar xf globzod.tar.xz
 ./zod/.run -d --http-port 8099
 
 URL="http://localhost:8099/globber"

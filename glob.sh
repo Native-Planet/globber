@@ -6,7 +6,7 @@ if [ ! -d "$DIR" ]; then
     exit 1
 fi
 
-curl -L -O globzod.tar.xz https://files.native.computer/glob/globzod.tar.xz
+curl -L https://files.native.computer/glob/globzod.tar.xz -o globzod.tar.xz
 tar xf globzod.tar.xz
 ./zod/.run -d --http-port 8099
 

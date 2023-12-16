@@ -7,6 +7,7 @@ if [ ! -d "$DIR" ]; then
 fi
 
 curl -L https://files.native.computer/glob/globzod.tar.xz -o globzod.tar.xz
+ls
 tar xf globzod.tar.xz
 ./zod/.run -d --http-port 8099
 

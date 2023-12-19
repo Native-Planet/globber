@@ -26,7 +26,7 @@ while IFS= read -r -d '' file; do
   CMD="$CMD -F \"file=@$file;filename=$REL_PATH;type=$MIME_TYPE\""
 done < <(find "$DIR" -type f -print0)
 
-RESPONSE=$(eval $CMD)
+RESPONSE="$(eval $CMD)"
 
 mv ./zod/.urb/put/*.glob .
 rm -rf zod

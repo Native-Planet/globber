@@ -19,7 +19,7 @@ while IFS= read -r -d '' file; do
 
   case "$file" in
     *.woff2) MIME_TYPE="font/woff2" ;;
-    *.js)    MIME_TYPE="application/javascript" ;;
+    *.js)    MIME_TYPE="text/javascript" ;;
     *.css)   MIME_TYPE="text/css" ;;
   esac
 
